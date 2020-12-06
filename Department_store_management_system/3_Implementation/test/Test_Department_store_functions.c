@@ -26,7 +26,7 @@ int main() {
   CU_add_test(suite, "Add_goods", test_Add_goods);
   CU_add_test(suite, "Edit_goods", test_Edit_goods);
   CU_add_test(suite, "Calculate_bill", test_Calculate_bill);
-  CU_add_test(suite, "Display_goods", test_Display_good);
+  CU_add_test(suite, "Display_goods", test_Display_goods);
   CU_add_test(suite, "Search_goods", test_Search_goods);
 
 
