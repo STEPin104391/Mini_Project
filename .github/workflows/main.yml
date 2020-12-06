@@ -1,0 +1,19 @@
+name: Valgrind
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: apt install dependency
+      run: |
+        sudo apt-get -y install valgrind
+        sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
+    - name: make test
+      run: |
+        make test -C Department_store_management_system/3_Implementation/
+        valgrind ./Department_store_management_system/3_Implementation/build/Test_Department_store_management_system.out
