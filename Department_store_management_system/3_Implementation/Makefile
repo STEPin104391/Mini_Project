@@ -44,8 +44,8 @@ doc:
 
 # call 'make test' to run unit after calling 'make run'
 #test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT).out -lcunit
-	./$(TEST_OUTPUT).out
+	#gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT).out -lcunit
+	#./$(TEST_OUTPUT).out
 
 # Remove all the built files, invoke by `make clean`
 clean:
